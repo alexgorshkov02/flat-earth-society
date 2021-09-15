@@ -1,4 +1,19 @@
 # Getting Started with Create React App
+<p>mocking this style: https://web.archive.org/web/20080705171443/http://www.myspace.com/</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
