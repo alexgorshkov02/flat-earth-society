@@ -15,7 +15,7 @@ function Navbar(props) {
     return (
         <header className="googlebar">
             <div class="logocontainer">
-                <h1 class="fes-logo">Flat Earthspace&trade;</h1>
+                <h1 class="fes-logo">Flat EartherSpace&trade;</h1>
                 <div id="searchheader">
                     <form id="srch" name="srch">
                         <input id="srchinput">
