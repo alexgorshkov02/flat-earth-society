@@ -29,8 +29,10 @@ body {
   text-align: center;
 }
 
+/* Header Bar */
 .googlebar {
-  background-color: #2358b8;
+  /* background-color: #2358b8; */
+  background-image: linear-gradient(#1b4591, #2358b8, #6698CB);
   margin: 0;
   padding: 10px;
 }
@@ -40,4 +42,49 @@ body {
   text-align: left;
   margin-left: 15px;
   font-size: 18px;
+}
+
+/* Searchbar */
+
+
+/* Navigation */
+.topnav {
+  height: 29px !important;
+  z-index: 200 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.topnav ul {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  display: block;
+}
+
+.topnav li {
+  display: inline;
+}
+
+.topnav a {
+  display: inline-block;
+  padding: .5em;
+  text-decoration: none;
+  display: inline;
+  color: white;
+  /* border-right: 1px #1B4591 solid;
+  border-left: 1px #1B4591 solid; */
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: #2358b8;
+}
+
+#leftNav {
+  float: left;
+}
+
+#rightNav {
+  float: right;
 }
