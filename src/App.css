@@ -37,11 +37,27 @@ body {
   padding: 10px;
 }
 
+.logocontainer {
+  margin: 0;
+  padding: 0;
+}
 .fes-logo {
   color: white;
   text-align: left;
   margin-left: 15px;
   font-size: 18px;
+}
+
+#searchheader {
+  text-align: right;
+}
+
+#srchbutton { 
+  color: #1b4591;
+}
+
+#srchbutton:hover {
+  cursor: pointer;
 }
 
 /* Searchbar */

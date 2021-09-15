@@ -14,18 +14,14 @@ function Navbar(props) {
 
     return (
         <header className="googlebar">
-            <div id="logo" class="splash">
-                <div>
-                    <div class="logocontainer">
-                        <h1 class="fes-logo">Flat Earth Society&trade;</h1>
-                    </div>
-                    <div id="searchheader">
-                        <form id="srch" name="srch">
-                            <input id="srchinput">
-                            </input>
-                            <button id="srchbutton">Search</button>
-                        </form>
-                    </div>
+            <div class="logocontainer">
+                <h1 class="fes-logo">Flat Earthspace&trade;</h1>
+                <div id="searchheader">
+                    <form id="srch" name="srch">
+                        <input id="srchinput">
+                        </input>
+                        <button id="srchbutton">Search</button>
+                    </form>
                 </div>
             </div>
             <div class="topnav">
