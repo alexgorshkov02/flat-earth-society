@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 function HomePage(props) {
     return (
@@ -16,12 +17,20 @@ function HomePage(props) {
         <Container class="container">
             <Row>
                 <Col>
-                    <section class="box">
+                    <Card class="card">
                         <header class="newsheader">
                             <h5>Today on Flat EarthSpace</h5>
                         </header>
-                    </section>
+                    </Card>
                 </Col>
+                <aside>
+                    <Card class="aside">
+                        <header class="newsheader">
+                            <h5>Join Today!</h5>
+                        </header>
+
+                    </Card>
+                </aside>
             </Row>
         </Container>
     )
