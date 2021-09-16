@@ -2,28 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  display: block;
-  height: 100%;
-}
-
-body {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 .App {
   text-align: center;
 }
@@ -37,18 +15,26 @@ body {
 }
 
 .logocontainer {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
 }
-.fes-logo {
+
+#searchheader {
+  margin: 0;
+  padding: 5px;
+  background-color: red;
+}
+
+/* #fes-logo {
   color: white;
   text-align: left;
   margin-left: 15px;
   font-size: 18px;
-}
-
-#searchheader {
-  text-align: right;
+} */
+#fes-title {
+  color: white;
+  text-align: left;
+  margin-left: 15px;
+  font-size: 18px;
 }
 
 #srchbutton { 
@@ -106,12 +92,14 @@ body {
 /* Footer */
 .footer {
   background-color: #E5E5E5 !important;
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
+  width: 100%;
 
   text-align: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+
   /* bottom: 0;
   left: 0;
   margin: 0;
@@ -122,6 +110,8 @@ body {
   margin: 0;
   display: block;
   display: inline;
+
+
   padding: 5px;
 }
 
@@ -132,4 +122,23 @@ body {
 .footer p {
   font-size: 14px;
   margin-left: 41px;
+}
+
+
+/* HomePage */
+.content {
+  border: solid #A8A8A8;
+  border-width: 0 1px;
+  max-width: 800px;
+  min-height: 800px;
+  background-color: gainsboro;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.newsheader {
+  background-color: #6698CB;
+  max-width: 100%;
+  color: white;
+  padding: .5px;
 }
