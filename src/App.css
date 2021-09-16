@@ -24,12 +24,6 @@
   background-color: red;
 }
 
-/* #fes-logo {
-  color: white;
-  text-align: left;
-  margin-left: 15px;
-  font-size: 18px;
-} */
 #fes-title {
   color: white;
   text-align: left;
@@ -44,9 +38,6 @@
 #srchbutton:hover {
   cursor: pointer;
 }
-
-/* Searchbar */
-
 
 /* Navigation */
 .topnav {
@@ -126,19 +117,24 @@
 
 
 /* HomePage */
-.content {
-  border: solid #A8A8A8;
-  border-width: 0 1px;
-  max-width: 800px;
-  min-height: 800px;
+.container {
   background-color: gainsboro;
-  margin-left: 60px;
-  margin-top: 20px;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.box {
+  max-width: 500px;
+  max-height: 300px;
+  display: block;
 }
 
 .newsheader {
-  background-color: #6698CB;
-  max-width: 100%;
   color: white;
   padding: .5px;
+  background-color: #6698CB;
+}
+
+.newsheader h5 {
+  margin-left: 15px;
 }
