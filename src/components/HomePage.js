@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+
 
 function HomePage(props) {
     return (
@@ -14,25 +11,37 @@ function HomePage(props) {
         //     </div>
             
         // </body>
-        <Container class="container">
-            <Row>
-                <Col>
-                    <Card class="card">
-                        <header class="newsheader">
-                            <h5>Today on Flat EarthSpace</h5>
-                        </header>
-                    </Card>
-                </Col>
-                <aside>
-                    <Card class="aside">
-                        <header class="newsheader">
-                            <h5>Join Today!</h5>
-                        </header>
+        <body>
+            <div class="form-container">
+                <div class="news-container">
+                    <div class="newsheader">
+                        <h5>Today at Flat EartherSpace</h5>
+                    </div>
+                </div>
 
-                    </Card>
-                </aside>
-            </Row>
-        </Container>
+                <div class="login-container">
+                    <div class="login-header">
+                        <h5>Log In</h5>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </body>
+                // <Col md={8}>
+                //     <Card class="">
+                //         <header class="newsheader">
+                //             <h5>Today on Flat EarthSpace</h5>
+                //         </header>
+                //     </Card>
+                // </Col>
+                // <Col md={12}>
+                //     <Card class="">
+                //         <header class="newsheader">
+                //             <h5>Join Today!</h5>
+                //         </header>
+                //     </Card>
+                // </Col>
     )
 }
 
