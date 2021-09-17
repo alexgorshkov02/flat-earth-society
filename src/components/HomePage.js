@@ -1,47 +1,52 @@
 import React, { useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function HomePage(props) {
     return (
-        // <body>
-        //     <div class="content">
-        //         <div class="newsheader">
-        //             <h5>Today on Flat EarthSpace</h5>
-        //         </div>
-        //     </div>
-            
-        // </body>
-        <body>
-            <div class="form-container">
-                <div class="news-container">
-                    <div class="newsheader">
-                        <h5>Today at Flat EartherSpace</h5>
-                    </div>
-                </div>
+        <Container>
+            <Row>
+                <Col>
+                    <section class="newscontainer">
+                        <header class="newsheader">
+                            <h5>Today at Flat EarthSpace</h5>
+                        </header>
+                    </section>
+                    <section class="logincontainer">
+                        <header class="loginheader">
+                            <h5>Log In</h5>
+                        </header>
+                        <div class="login-forms">
+                            <label>Email
+                                <input type="text">
+                                </input>
+                            </label>
 
-                <div class="login-container">
-                    <div class="login-header">
-                        <h5>Log In</h5>
-                    </div>
-                    
-                </div>
+                            <label>Password
+                                <input type="text">
 
-            </div>
-        </body>
-                // <Col md={8}>
-                //     <Card class="">
-                //         <header class="newsheader">
-                //             <h5>Today on Flat EarthSpace</h5>
-                //         </header>
-                //     </Card>
-                // </Col>
-                // <Col md={12}>
-                //     <Card class="">
-                //         <header class="newsheader">
-                //             <h5>Join Today!</h5>
-                //         </header>
-                //     </Card>
-                // </Col>
+                                </input>
+                            </label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="checkbox"></input>
+                                    Remember Me
+                                </li>
+                                <li>
+                                    <button id="loginbutton">Log In</button>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </section>
+    
+                </Col>
+
+            </Row>
+        </Container>
     )
 }
 
