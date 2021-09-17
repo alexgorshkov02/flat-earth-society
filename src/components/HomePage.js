@@ -31,7 +31,7 @@ function HomePage(props) {
                             </label>
                             <ul>
                                 <li>
-                                    <input type="checkbox" id="checkbox"></input>
+                                    <input id="checkbox" type="checkbox" id="checkbox"></input>
                                     Remember Me
                                 </li>
                                 <li>
