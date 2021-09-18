@@ -1,25 +1,26 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+// import Box from '@mui/material/Box';
+// import Paper from '@mui/material/Paper';
+import { makeStyles } from '@material-ui/core/styles';
+// import Typography from '@material-ui/core/Typography';
+// import Grid from '@ui/material/Grid';
 
+const useStyles = makeStyles(theme => ({
+    flex: {
+        display: 'flex',
+    },
+
+}));
 
 
 export default function HomePage() {
+
+    const classes = useStyles();
+
     return (
-        <Box
-          sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            '& > :not(style)': {
-              m: 1,
-              width: 128,
-              height: 128,
-            },
-          }}
-        >
-          <Paper elevation={0} />
-          <Paper />
-          <Paper elevation={3} />
-        </Box>
+        <div>
+
+        </div>
+
     );
 }
