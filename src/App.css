@@ -8,6 +8,7 @@
 html {
   /* may need to update this. */
   background-color: gainsboro;
+  min-height: 100%;
 }
 /* Header Bar */
 .googlebar {
@@ -63,6 +64,19 @@ html {
 
 #rightNav {
   float: right;
+}
+
+.main-content {
+  float: none;
+  height: 100vh;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  min-height: 400px;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Footer */
@@ -128,7 +142,8 @@ html {
   width: 300px;
   border: .5px black solid;
   display: block;
-
+  margin-top: 2em;
+  margin-right: 30px;
 }
 
 .loginheader {
@@ -147,6 +162,7 @@ html {
 label {
   color: white;
   display: block;
+  font-size: 12px;
 }
 
 
@@ -191,6 +207,8 @@ label {
 } */
 
 
+@media (max-width: 400px) {
 
+}
 
 

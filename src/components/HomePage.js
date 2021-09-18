@@ -6,9 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 function HomePage(props) {
     return (
-        <Container>
-            <Row>
-                <Col>
+        <div class="main-content">
                     <section class="newscontainer">
                         <header class="newsheader">
                             <h5>Today at Flat EarthSpace</h5>
@@ -39,14 +37,11 @@ function HomePage(props) {
                                 </li>
 
                             </ul>
-
                         </div>
                     </section>
-    
-                </Col>
 
-            </Row>
-        </Container>
+        </div>
+    
     )
 }
 
