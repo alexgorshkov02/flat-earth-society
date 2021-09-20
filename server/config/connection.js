@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/flatearthsociety', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useFindAndModify: false,
+  useUnifiedTopology: true,
 });
 
 module.exports = mongoose.connection;
