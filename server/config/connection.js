@@ -1,11 +1,9 @@
 const mongoose = require('mongoose');
 
-Mongoose.connect(
-  MONGODB_URL,
-  async(err)=>{
-      if(err) throw err;
-      console.log("conncted to db")
-  }
-)
+mongoose.connect(process.env.MONGODB_URI || 
+  'mongodb://localhost/flatearthsociety', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }); 
 
 module.exports = mongoose.connection;
