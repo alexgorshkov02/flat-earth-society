@@ -16,6 +16,7 @@ type Post {
   commentCount: Int
   comments: [Comment]
 }
+
 type Auth {
   token: ID!
   user: User
@@ -36,12 +37,11 @@ type Query {
   }
 
 type Mutation {
-  login(email: String!, passwordL String!): Auth
+  login(email: String!, password: String!): Auth
   addUser(username: String!, email: String!, password: String!): Auth
   addPost(postText: String!): Post
   addComment(postId: ID!, commentText: String!): Post
 }
-
 `;
 
 module.exports = typeDefs;

@@ -26,7 +26,7 @@ mutation addUser ($username: String!, $email: String!, $password: String!){
 
 export const ADD_POST = gql`
 mutation addPost($postText: String!){
-    addPost(postTextL $postText){
+    addPost(postText: $postText){
         _id
         postText
         createdAt
