@@ -8,9 +8,19 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   login: {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+    backgroundColor: "#1b4591",
+    color: "white"
   },
+  loginButton: {
+    backgroundColor: "#fbc22f",
+    color: "black",
+    fontWeight: "bold"
+  },
+  textField: {
+    backgroundColor: "white",
+
+  }
+  
 });
 
 function handleButtonPress() {
@@ -25,19 +35,21 @@ export default function Form() {
       className={classes.login}
       component="form"
       sx={{
-        "& .MuiTextField-root": { m: 1, width: "25ch" },
+        "& .MuiTextField-root": { m: 4, width: "25ch" },
       }}
       noValidate
       autoComplete="off"
     >
       <div>
         <TextField
+          className={classes.textField}
           id="standart-email-input"
           label="E-mail"
           autoComplete="current-email"
           variant="standard"
         />
         <TextField
+          className={classes.textField}
           id="standart-password-input"
           label="Password"
           type="password"
@@ -50,8 +62,10 @@ export default function Form() {
           inputProps={{ "aria-label": "controlled" }}
         /> */}
         <Button
+          className={classes.loginButton}
           variant="contained"
           color="primary"
+          backgroundColor="#FBC22F"
           onClick={() => {
             handleButtonPress();
           }}

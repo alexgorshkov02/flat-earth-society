@@ -9,7 +9,21 @@ import Paper from "@mui/material/Paper";
 import Form from "../elements/Form";
 import About from "../elements/About";
 
-const useStyles = makeStyles({});
+const useStyles = makeStyles({
+  // .login-container {
+  //   background-image: linear-gradient(#2358b8, #1b4591, #2358b8); 
+  //   height: 300px;
+  //   width: 390px;
+  //   margin-right: 150px;
+  
+  // }
+
+
+
+
+
+
+});
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
