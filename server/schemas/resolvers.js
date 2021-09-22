@@ -11,20 +11,7 @@ const resolvers = {
          
                return userData
     }
-            
-
-           
-    throw new AuthenticationError('Not logged in')
-        },
-        users: async () => {
-            return User.find()
-            .select('-__v -password')
-            .populate('posts')
-        },
-        user: async (parent, {username})=> {
-            return User.findOne({username})
-            .select('-__v -password')
-            .populate('posts')
+             throw new AuthenticationError('Not logged in')
         },
         posts: async (parent, {username})=>{
             const params = username ? {username} : {};
