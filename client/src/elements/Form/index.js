@@ -7,18 +7,25 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   login: {
-    display: "flex",
-    backgroundColor: "#1b4591",
-    color: "white"
+    display: "block",
+    background: 'linear-gradient(45deg, #1b4591 30%, #2358b8 90%)',
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
   },
   loginButton: {
     backgroundColor: "#fbc22f",
+    '&:hover': {
+      backgroundColor: '#FBC22F'
+    },
     color: "black",
     fontWeight: "bold"
   },
   textField: {
     backgroundColor: "white",
-
+    display: "block",
+  },
+  loginHeader: {
+    color: "white",
   }
   
 });
@@ -41,6 +48,7 @@ export default function Form() {
       autoComplete="off"
     >
       <div>
+        <h3 className={classes.loginHeader}>Sign in</h3>
         <TextField
           className={classes.textField}
           id="standart-email-input"
