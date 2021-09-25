@@ -26,7 +26,7 @@ function Navbar(props) {
                     </form>
                 </div> */}
             </div>
-            <div class="topnav">
+            <div className="topnav">
                 <ul id="leftNav">
                     <li><a href="">Home</a></li>
                     <li><a href="">Browse</a></li>
