@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import {Link} from 'react-router-dom'
 
 function Navbar(props) {
     console.log('this is props', props)
@@ -28,14 +28,14 @@ function Navbar(props) {
             </div>
             <div className="topnav">
                 <ul id="leftNav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Browse</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/browse">Browse</Link></li>
                     <li><a href="">Find People</a></li>
                 </ul>
                 <ul id="rightNav">
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Safety</a></li>
-                    <li><a href="">Sign Up</a></li>
+                    <li><Link to="/signup">Sign Up</Link></li>
 
                 </ul>
             </div>
