@@ -8,16 +8,16 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   login: {
     display: "flex",
-    backgroundColor: "#1b4591",
+    background: "#1b4591",
     color: "white"
   },
   loginButton: {
-    backgroundColor: "#fbc22f",
+    background: "#fbc22f",
     color: "black",
     fontWeight: "bold"
   },
   textField: {
-    backgroundColor: "white",
+    background: "white",
 
   }
   
@@ -65,7 +65,7 @@ export default function Form() {
           className={classes.loginButton}
           variant="contained"
           color="primary"
-          backgroundColor="#FBC22F"
+          background="#FBC22F"
           onClick={() => {
             handleButtonPress();
           }}

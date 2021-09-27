@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
-const {signToken} = require('../utils/auth')
+const { User, Post } = require('../models');
+const {signToken} = require('../utils/auth');
+
 const resolvers = {
     Query: {
         me: async (context) => {
@@ -13,9 +14,11 @@ const resolvers = {
     }
              throw new AuthenticationError('Not logged in')
         },
+        
+        //Do we need username at all? If we want to show all messages or high rated messages
         posts: async (parent, {username})=>{
             const params = username ? {username} : {};
-            return postMessage.find(params).sort({createdAt: -1})
+            return Post.find(params).sort({createdAt: -1})
         },
         post: async (parent, {_id})=> {
             return Post.findOne({_id});
@@ -42,7 +45,13 @@ const resolvers = {
             const token = signToken(user)
             return {token, user}
         },
-        addPost: async (parent, args, context)=>{
+        addPost: async (parent, args)=>{
+            const context = {
+                user: {
+                    username: "testUser",
+                    _id: '612ae009469041001643d83f'
+                }
+            }
             if(context.user){
                 const post = await Post.create({...args, username: context.user.username})
 

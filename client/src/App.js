@@ -1,29 +1,59 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
-import {ApolloProvider} from '@apollo/client';
-import ApolloClient from 'apollo-boost';
+// import {ApolloProvider} from '@apollo/client';
+// import ApolloClient from 'apollo-boost';
 
 import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import Footer from "./elements/Footer";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+
 import Signup from './components/Signup';
 import NoMatch from './components/noMatch';
 import Browse from './components/Browse';
 
-const client = new ApolloClient({
-  request: operation => {
-    const token = localStorage.getItem('id_token');
 
-    operation.setContext({
-      headers: {
-        authorization: token ? `Bearer ${token}` : ''
-      }
-    });
-  },
-  uri: '/graphql'
+const httpLink = createHttpLink({
+  uri: '/graphql',
 });
+
+//TODO: Uncomment when the auth is implemented
+// const authLink = setContext((_, { headers }) => {
+//   const token = localStorage.getItem('id_token');
+//   return {
+//     headers: {
+//       ...headers,
+//       authorization: token ? `Bearer ${token}` : '',
+//     },
+//   };
+// });
+
+const client = new ApolloClient({
+  // link: authLink.concat(httpLink),
+  link: httpLink,
+  cache: new InMemoryCache(),
+});
+
+//REVIEW:It was a conflict
+// const client = new ApolloClient({
+//   request: operation => {
+//     const token = localStorage.getItem('id_token');
+
+//     operation.setContext({
+//       headers: {
+//         authorization: token ? `Bearer ${token}` : ''
+//       }
+//     });
+//   },
+//   uri: '/graphql'
+
 
 function App() {
   return (

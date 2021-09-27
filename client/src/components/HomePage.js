@@ -8,6 +8,7 @@ import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Form from "../elements/Form";
 import About from "../elements/About";
+import RecentPostsContainer from "../elements/RecentPostsContainer"
 
 const useStyles = makeStyles({
   // .login-container {
@@ -40,6 +41,9 @@ export default function HomePage() {
       <Grid item xs={8}>
         <Item>
           <About />
+        </Item>
+        <Item>
+          <RecentPostsContainer />
         </Item>
       </Grid>
       <Grid item xs={4}>
