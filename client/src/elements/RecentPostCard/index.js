@@ -35,7 +35,7 @@ export default function RecipeReviewCard(props) {
 
   console.log("Props", props);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       {/* <CardHeader
         action={
           <IconButton aria-label="settings">
