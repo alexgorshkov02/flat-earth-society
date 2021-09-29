@@ -4,7 +4,7 @@ import SearchBar from "material-ui-search-bar";
 export default function About() {
   return (
     <Fragment>
-      About the website here
+      Find Friends Here
     <SearchBar
       onChange={() => console.log('onChange')}
       onRequestSearch={() => console.log('onRequestSearch')}

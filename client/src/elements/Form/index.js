@@ -27,7 +27,6 @@ const useStyles = makeStyles({
   loginHeader: {
     color: "white",
   }
-  
 });
 
 function handleButtonPress() {

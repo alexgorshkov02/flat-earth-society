@@ -34,7 +34,7 @@ function Navbar(props) {
                 </ul>
                 <ul id="rightNav">
                     <li><a href="">Privacy</a></li>
-                    <li><a href="">Safety</a></li>
+                    <li><a href="./Portfolio.js">Portfolio</a></li>
                     <li><a href="">Sign Up</a></li>
 
                 </ul>
