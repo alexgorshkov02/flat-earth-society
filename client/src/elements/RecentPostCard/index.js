@@ -75,12 +75,11 @@ export default function RecipeReviewCard(props) {
           <Typography paragraph>Comment 3</Typography>
          { commentOpen && <CommentForm /> }
           <Button
-  onClick={() => {
-      setcommentOpen(!commentOpen)
-    }}
->
-  Comment
-</Button>
+            onClick={() => {
+              setcommentOpen(!commentOpen)
+              }}>
+            Comment
+          </Button>
         </CardContent>
       </Collapse>
     </Card>
