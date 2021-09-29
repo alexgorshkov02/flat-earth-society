@@ -14,6 +14,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import Button from '@mui/material/Button';
+import CommentForm from '../../components/CommentForm'
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -28,7 +30,7 @@ const ExpandMore = styled((props) => {
 
 export default function RecipeReviewCard(props) {
   const [expanded, setExpanded] = React.useState(false);
-
+  const [commentOpen, setcommentOpen] = React.useState(false);
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -71,6 +73,14 @@ export default function RecipeReviewCard(props) {
           <Typography paragraph>Comment 1</Typography>
           <Typography paragraph>Comment 2</Typography>
           <Typography paragraph>Comment 3</Typography>
+         { commentOpen && <CommentForm /> }
+          <Button
+  onClick={() => {
+      setcommentOpen(!commentOpen)
+    }}
+>
+  Comment
+</Button>
         </CardContent>
       </Collapse>
     </Card>
