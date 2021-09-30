@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom'
 
 function Navbar(props) {
-    console.log('this is props', props)
     let page;  
     if (props.currentPage === '') {
         page = ''

@@ -35,7 +35,6 @@ export default function RecipeReviewCard(props) {
     setExpanded(!expanded);
   };
 
-  console.log("Props", props);
   return (
     <Card>
       {/* <CardHeader
