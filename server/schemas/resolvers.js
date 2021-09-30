@@ -18,7 +18,7 @@ const resolvers = {
         //Do we need username at all? If we want to show all messages or high rated messages
         posts: async (parent, {username})=>{
             const params = username ? {username} : {};
-            return Post.find(params).sort({createdAt: -1})
+            return Post.find(params).sort({createdAt: -1}).limit(5);
         },
         post: async (parent, {_id})=> {
             return Post.findOne({_id});
@@ -46,6 +46,8 @@ const resolvers = {
             return {token, user}
         },
         addPost: async (parent, args)=>{
+
+            console.log(args);
             const context = {
                 user: {
                     username: "testUser",
