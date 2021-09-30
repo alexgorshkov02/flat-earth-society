@@ -74,7 +74,7 @@ export const QUERY_ME = gql`
 }
 `;
 
-export const QUEWRY_ME_BASIC = gql`
+export const QUERY_ME_BASIC = gql`
 {
     me {
         _id
