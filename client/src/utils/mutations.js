@@ -25,11 +25,10 @@ mutation addUser ($username: String!, $email: String!, $password: String!){
 `;
 
 export const ADD_POST = gql`
-mutation addPost($user_id: ID!, $postText: String!){
-    addPost(user_id: $user_id, postText: $postText){
+mutation addPost($postText: String!){
+    addPost(postText: $postText){
         _id
         postText
-        user_id
         createdAt
         username
         commentCount
