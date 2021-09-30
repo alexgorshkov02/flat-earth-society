@@ -9,7 +9,6 @@ import {QUERY_POSTS} from "../../utils/queries.js";
 export default function RecentPostsContainer() {
     const {loading, data, error} = useQuery(QUERY_POSTS);
     const posts = data?.posts || [];
-    console.log("TestData", posts);
 
   return (
     <React.Fragment>
