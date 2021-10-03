@@ -22,7 +22,7 @@ This app is a social networking site that allows to share and comment posts onli
 ![Screenshot](./misc/screenshot.jpg?raw=true)
 
 ## Link
-https://flat-earther-space.herokuapp.com
+https://flat-earth-society.herokuapp.com
 
 ## Installation Instructions
 
